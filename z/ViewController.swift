@@ -14,7 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    /**
+    This is a description of the function
+    */
+    func example(p1: String, p2: Int){
+        let str = p1
+        let otherInt = p2
+        print("\(str) and \(otherInt)")
+    }
+    
+    @IBAction func buttonClicked(_sender: UIButton){
+        print("Button Pressed")
+        example(p1: "Hello", p2: 1000)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
